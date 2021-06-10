@@ -8,8 +8,8 @@ changeCity.addEventListener('click', () => {
 })
 function takewetter(city){
 
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid= "YOU ARE KEYS HERE"&units=metric';
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=1a3c8c583b6e078c2b89bf0f5cfccbc9&units=metric';
 
 let request = new XMLHttpRequest();//create object
 request.open('GET' ,url); // first parameter GET(for send information we use Get)/POST,SECOND PARAmeter : url
